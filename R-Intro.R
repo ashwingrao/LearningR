@@ -1,0 +1,14 @@
+help(solve)
+help("[[")
+htlp.start()
+help.start()
+??solve
+appropos(solve)
+apropos(solve)
+??appropos
+??help
+??appropos
+apropos("solve")
+objects()
+ls()
+rm(anscombe)
