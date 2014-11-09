@@ -69,3 +69,39 @@ y <- s3[-(1:5)]
 fruit <- c(5, 10, 1, 20)
 names(fruit) <- c("orange", "banana", "apple", "peach")
 lunch <- fruit[c("apple","orange")]
+x=c(x,NA)
+x[is.na(x)] <- 0
+y[y < 0] <- -y[y < 0]
+emptyc<-character(0)
+emptyc<- emptyc,c("1")
+mode(emptyc)
+mode(x)
+attributes(x)
+x
+z <- 0:9
+digits<-as.character(z)
+names(digits)<-c("one","two","three")
+digits["two"]
+e <- numeric()
+e[3]<-17
+e
+scan(e)
+alpha <- labs[2 * 1:5]
+length(alpha) <-3
+alpha
+attributes(alpha)
+?attributes
+state <- c("tas", "sa",  "qld", "nsw", "nsw", "nt",  "wa",  "wa", "qld", "vic", "nsw", "vic", "qld", "qld", "sa",  "tas", "sa",  "nt",  "wa",  "vic", "qld", "nsw", "nsw", "wa","sa",  "act", "nsw", "vic", "vic", "act")
+factor(state)
+statef<-factor(state)
+levels(statef)
+incomes <- c(60, 49, 40, 61, 64, 60, 59, 54, 62, 69, 70, 42, 56, 61, 61, 61, 58, 51, 48, 65, 49, 49, 41, 48, 52, 46, 59, 46, 58, 43)
+incmeans <- tapply(incomes, statef, mean)
+levels(statef)
+incmeans
+incvar <- tapply(incomes, statef, var)
+incvar
+incmeans <- tapply(incomes, statef)
+?tapply
+stderr <- function(x) sqrt(var(x)/length(x))
+incster <- tapply(incomes, statef, stderr)
